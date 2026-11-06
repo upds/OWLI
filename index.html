@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador OWLI</title>
+
+```
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<link rel="icon" type="png" href="logo.png">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Selección de Área -->
+<div class="start_btn">
+
+    <img src="logo.png" alt="USFX" class="logo-usfx">
+
+    <h2>SIMULADOR DE ADMISIÓN</h2>
+
+    <p class="subtitle">
+        Seleccione el área para comenzar el examen
+    </p>
+
+    <button class="area-btn" data-area="sociales">
+        Sociales y Humanísticas
+    </button>
+
+    <button class="area-btn" data-area="salud">
+        Salud
+    </button>
+<!--
+    <button class="area-btn" data-area="economicas">
+        Económicas y Financieras
+    </button>
+
+    <button class="area-btn" data-area="tecnologicas">
+        Tecnológicas y Agrarias
+    </button>
+
+    <button class="area-btn general" data-area="general">
+        Simulacro General USFX
+    </button>
+-->
+    <div class="biblioteca-container">
+    <a href="https://drive.google.com/drive/folders/1LQIwnB1yOwBWqRfy3HmucTHk4zpmohbk?usp=sharing" target="_blank" class="biblioteca-btn">
+        📚 Biblioteca 
+    </a>
+</div>
+</div>
+
+<!-- Caja de Información -->
+<div class="info_box">
+
+    <div class="info-title">
+        <span>Reglas del Examen</span>
+    </div>
+
+    <div class="info-list">
+
+        <div class="info">
+            1. Dispondrá de <span>15 segundos</span> para responder cada pregunta.
+        </div>
+
+        <div class="info">
+            2. Una vez seleccionada una respuesta no podrá modificarla.
+        </div>
+
+        <div class="info">
+            3. Si el tiempo finaliza, se mostrará automáticamente la respuesta correcta.
+        </div>
+
+        <div class="info">
+            4. No podrá abandonar el examen mientras esté en ejecución.
+        </div>
+
+        <div class="info">
+            5. Cada respuesta correcta suma un punto.
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button class="quit">Cancelar</button>
+        <button class="restart">Comenzar</button>
+    </div>
+
+</div>
+
+<!-- Caja del Quiz -->
+<div class="quiz_box">
+
+    <header>
+
+        <div class="title">
+            Simulador USFX
+        </div>
+
+        <div class="timer">
+            <div class="time_left_txt">
+                Tiempo
+            </div>
+
+            <div class="timer_sec">
+                15
+            </div>
+        </div>
+
+        <div class="time_line"></div>
+
+    </header>
+
+    <section>
+
+        <div class="que_text">
+        </div>
+
+        <div class="option_list">
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="total_que">
+        </div>
+
+        <button class="next_btn">
+            Siguiente
+        </button>
+
+    </footer>
+
+</div>
+
+<!-- Resultado -->
+<div class="result_box">
+
+    <div class="icon">
+        <i class="fas fa-award"></i>
+    </div>
+
+    <div class="complete_text">
+        Examen Finalizado
+    </div>
+
+    <div class="score_text">
+    </div>
+
+    <div class="buttons">
+        <button class="restart">
+            Repetir
+        </button>
+
+        <button class="quit">
+            Salir
+        </button>
+    </div>
+
+</div>
+
+<!-- Bancos de Preguntas -->
+<script src="js/sociales.js"></script>
+<script src="js/salud.js"></script>
+<script src="js/economicas.js"></script>
+<script src="js/tecnologicas.js"></script>
+
+<!-- Lógica -->
+<script src="js/script.js"></script>
+```
+
+</body>
+</html>
